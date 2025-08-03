@@ -1,73 +1,52 @@
-# Welcome to your Lovable project
+🦌 Wildlife Distress Detection Web App
+📌 Objective
+A web-based AI application that analyzes wildlife camera trap images to detect signs of distress in animals — such as injury, collapse, or abnormal posture — and alerts users accordingly.
 
-## Project info
+🧠 Problem
+Wild animals often suffer silently in forests due to injuries, disease, starvation, or extreme weather. Existing wildlife monitoring systems only detect the presence of animals, not their condition. This leads to missed opportunities for early intervention or rescue.
 
-**URL**: https://lovable.dev/projects/b6bbb781-dd22-4d88-867e-1cf596cba0bd
+🎯 Solution
+This project provides an AI-powered web platform to:
 
-## How can I edit this code?
+Automatically detect animals in camera trap images
 
-There are several ways of editing your application.
+Identify visible signs of suffering using visual cues
 
-**Use Lovable**
+Classify images as “Normal” or “Possible Distress”
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b6bbb781-dd22-4d88-867e-1cf596cba0bd) and start prompting.
+(Optional) Enhance detection using environmental data
 
-Changes made via Lovable will be committed automatically to this repo.
+Provide clear, visual results in a user-friendly web interface
 
-**Use your preferred IDE**
+🛠️ Technologies Used
+Python – Core backend and AI logic
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+YOLOv5 / MobileNet – Animal detection and classification
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+OpenCV / Matplotlib – Image processing and annotation
 
-Follow these steps:
+Flask or Streamlit – Web framework for UI and API
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+HTML / CSS / JS (optional) – Frontend interface (if using Flask)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Google Colab / Jupyter – Model training and experimentation
 
-# Step 3: Install the necessary dependencies.
-npm i
+LILA.science / iWildCam / Snapshot Serengeti – Public wildlife datasets
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+📂 Functional Components
+Image Upload Module – Upload camera trap images
 
-**Edit a file directly in GitHub**
+Animal Detection Module – Detect species and locations in the image
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Distress Classification Module – Classify posture and signs of injury
 
-**Use GitHub Codespaces**
+Visualization Module – Display annotated image with distress labels
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+(Optional): Environment Risk Integration – Use weather/region data to assess additional risk
 
-## What technologies are used for this project?
+📁 Datasets
+iWildCam 2020 – Global wildlife camera trap dataset
 
-This project is built with:
+Snapshot Serengeti – Labeled animal images from Serengeti
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b6bbb781-dd22-4d88-867e-1cf596cba0bd) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+LILA.science – Open-access wildlife image repositories
